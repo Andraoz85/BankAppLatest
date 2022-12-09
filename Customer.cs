@@ -10,20 +10,7 @@ namespace ATMApp
         private int accountNr;
 
         private double balance { get; set; }
-        public Customer(string? name, int pinCode)
-        {
-            this.name = name;
-            this.pinCode = pinCode;
-        }
-        public Customer(int pinCode)
-        {
-            this.pinCode = pinCode;
-        }
 
-        public Customer(double balance)
-        {
-            this.balance = balance;
-        }
 
         public Customer()
         {

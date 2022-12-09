@@ -12,7 +12,7 @@ namespace ATMApp
         Customer _customer;
         TransactionHistory _transactionHistory;
 
-        
+
 
         //public TransactionHistory transactionHistory { get; private set; }
 
@@ -58,12 +58,11 @@ namespace ATMApp
             //_transactionHistory = transactionHistory;
             string depositAmountString = DepositAmount.Text;
             string depositAccountRecieverString = AccountReciever.Text;
-            int depositAccountReciever = Convert.ToInt32(depositAccountRecieverString);
             int depositAmount = Convert.ToInt32(depositAmountString);
-
+            int depositAccountReciever = Convert.ToInt32(depositAccountRecieverString);
             Transaction transaction = new Transaction(1, depositAmount, true, DateTime.Now, depositAccountReciever, _customer.GetAccountNr());
             this._transactionHistory.TransactionList.Add(transaction);
-            
+
         }
 
         private void DepositAmount_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)

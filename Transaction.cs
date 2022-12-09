@@ -32,12 +32,5 @@ namespace ATMApp
             double balance = _customer.GetBalance();
             _customer.SetBalance(balance += amount);
         }
-
-        //FOR TESTING
-        public Transaction()
-        {
-        }
-        //FOR TESTING
-
     }
 }
