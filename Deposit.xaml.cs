@@ -15,7 +15,7 @@ namespace ATMApp
 
 
         //public TransactionHistory transactionHistory { get; private set; }
-
+        /*
         public void SetTransactionHistory(TransactionHistory transactionHistory)
         {
             _transactionHistory = transactionHistory;
@@ -24,7 +24,8 @@ namespace ATMApp
         public void SetCustomer(Customer customer)
         {
             _customer = customer;
-        }
+        }*/
+
         public Deposit(Customer customer)
         {
             InitializeComponent();

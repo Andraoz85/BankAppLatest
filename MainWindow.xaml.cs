@@ -1,5 +1,4 @@
-﻿using System;
-using System.Windows;
+﻿using System.Windows;
 
 namespace ATMApp
 {
@@ -43,9 +42,11 @@ namespace ATMApp
             App.Current.Shutdown();
         }
 
-        public void LoginButton_Click()
+        public void Registrera_Click(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            var Registrering = new Registrering();
+            Registrering.Show();
+            Close();
         }
 
 

@@ -5,11 +5,57 @@ namespace ATMApp
     public class Customer
     {
 
-        private string? name;
-        private int pinCode;
-        private int accountNr;
+        private string _name;
 
-        private double balance { get; set; }
+        public string name
+        {
+            get
+            {
+                return _name;
+            }
+            set
+            {
+                _name = value;
+            }
+        }
+
+
+        private int _pinCode;
+        public int pinCode
+        {
+            get
+            {
+                return _pinCode;
+            }
+            set
+            {
+                _pinCode = value;
+            }
+        }
+        private int _accountNr;
+        public int accountNr
+        {
+            get
+            {
+                return _accountNr;
+            }
+            set
+            {
+                _accountNr = value;
+            }
+        }
+        private double _balance;
+        public double balance
+        {
+            get
+            {
+                return _balance;
+            }
+            set
+            {
+                _balance = value;
+            }
+        }
 
 
         public Customer()
